@@ -1,27 +1,31 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
-
 # Calculator Layout Boss Challenge
 
-No knowledge is your own until you put it into practice. Using what you've learnt about auto layout, stack views and setting constraints, create the following UI. 
+This is my attempt to the iOS dev course from app bewery on **Layouts**.
+Use the concepts of Auto Layout, Stack Views, Constraints, Alignment to create the following UI.
 
 ## Portrait
 
 ![Portrait](Documentation/Portrait.png)
 
 ## Landscape
+
 ![Landscape](Documentation/Landscape.png)
 
-This is a difficult challenge. You pass the challenge if you can create the vertical and horizontal stacks required for the layout. Once you've done that, you can also get extra credit if you figure out how to layout the small details.
+## My Approach
 
-Bronze Medal: If you can figure out how to have the layout be constrained to the Safe Areas in Portrait and Landscape. (Notice the distance to the edges is different between landscape and portrait.
+1. Created `Vertical Stack` and used distribution = "fill equally", and constrained it to safe area view - all 4 corners.
+2. Created `Horizontal Stack` for each row and constraint them to trailing and leading of the super view.
+3. For last row - inserted **0** into a `Horizontal Stack` and **.**, **=** in another `Horizontal Stack` and then distributed them as "fill equally" to make **0** twice as big as the other ones.
+4. Edited the constraint for Result from - trailing 20 points.
 
-Silver Medal: If you can figure out how to indent the Label with the 0 so that there is 20px distance from the right edge of the screen.
+This is my attempt for Layout's Assignment from the course - App Brewery's Complete App Development Bootcamp
 
-Gold Medal: If you can figure out how to make the 0 button take up twice as much width as the "." and "=" buttons.
+## Result
 
-If you get stuck, check out the solution video in the next lesson.
+### Potrait
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+![PotraitResult](./Result%20Image/Potrait.png)
 
-![End Banner](Documentation/readme-end-banner.png)
+### Landscape
 
+![LandScapeResult](./Result%20Image/Landscape.png)
